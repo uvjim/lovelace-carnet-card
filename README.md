@@ -21,7 +21,7 @@ slice_url: https://images.portal.volkswagen-we.com/slices/passat_variant_gte_pa/
 
 1. Clone Repo
 2. Run dev server `http-server --cors -c-1 -p 8000`
-3. Open Home-Assistant -> Settings -> Lovelace Dashboards -> Ressources -> http://<your-ip>:8000/carnet-card.js
+3. Open Home-Assistant -> Settings -> Lovelace Dashboards -> Ressources -> `http://<your-ip>:8000/carnet-card.js`
 
 ## Example:
 
