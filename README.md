@@ -1,10 +1,10 @@
 # Install
 
-```
-resources:
-    url: ....
-    type: js
-```
+1. Open Home-Assistant
+2. Settings
+3. Lovelace Dashboards
+4. Ressources
+5. Add new: https://raw.githubusercontent.com/David-Development/lovelace-carnet-card/master/carnet-card.js (JavaScript Module)
 
 ## Configure
 
