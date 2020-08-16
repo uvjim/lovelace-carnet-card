@@ -3,7 +3,7 @@ class CarnetCard extends HTMLElement {
     if (!this.content) {
       const card = document.createElement("ha-card");
       this.content = document.createElement("div");
-      this.content.style.padding = "0 16px 16px";
+      this.content.style.width = "100%";
       card.appendChild(this.content);
       this.appendChild(card);
     }
@@ -76,7 +76,7 @@ class CarnetCard extends HTMLElement {
 
       const key = state.state === "on" ? sensor.on : sensor.off;
       const url = `${sliceUrl}_${sensor.carnetId}_${key}@2x.png`;
-      return `<img src="${url}" style="position: absolute; top: 0;" />`;
+      return `<img src="${url}" style="transform-origin: 50%; position: absolute; top: 0; left: 0; width: 100%" />`;
     });
 
     // console.log(entities);
@@ -85,7 +85,7 @@ class CarnetCard extends HTMLElement {
     // console.log(images);
 
     this.content.innerHTML = `
-      <img src="${sliceUrl}_car@2x.png" />
+      <img src="${sliceUrl}_car@2x.png" style="width: 100%;" />
       ${images.join("")}
     `;
   }
