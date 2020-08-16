@@ -74,8 +74,11 @@ class CarnetCard extends HTMLElement {
         return "";
       }
 
-      const key = state.state === "on" ? sensor.on : sensor.off;
-      const url = `${sliceUrl}_${sensor.carnetId}_${key}@2x.png`;
+      let key = state.state === "on" ? sensor.on : sensor.off;
+      if (key !== "") {
+        key = `_${key}`; // add underscore in front of key
+      }
+      const url = `${sliceUrl}_${sensor.carnetId}${key}@2x.png`;
       return `<img src="${url}" style="transform-origin: 50%; position: absolute; top: 0; left: 0; width: 100%" />`;
     });
 
