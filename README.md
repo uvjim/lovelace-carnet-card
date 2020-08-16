@@ -9,8 +9,7 @@
 3. Lovelace Dashboards
 4. Ressources
 5. Add new: https://raw.githubusercontent.com/David-Development/lovelace-carnet-card/master/carnet-card.js (JavaScript Module)
-
-### Configure
+6. Open your dashboard -> Edit Dashboard -> Add new Card -> Manual (all the way on the bottom)
 
 ```yaml
 type: "custom:carnet-card"
@@ -22,7 +21,7 @@ slice_url: https://images.portal.volkswagen-we.com/slices/passat_variant_gte_pa/
 
 1. Clone Repo
 2. Run dev server `http-server --cors -c-1 -p 8000`
-3. Open Home-Assistant -> Settings -> Lovelace Dashboards -> Ressources -> http://<your-ip>:8000/carnet-card.js
+3. Open Home-Assistant -> Settings -> Lovelace Dashboards -> Ressources -> `http://<your-ip>:8000/carnet-card.js`
 
 ## Example:
 
