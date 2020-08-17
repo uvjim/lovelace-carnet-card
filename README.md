@@ -8,7 +8,7 @@
 2. Settings
 3. Lovelace Dashboards
 4. Ressources
-5. Add new: https://raw.githubusercontent.com/David-Development/lovelace-carnet-card/master/carnet-card.js (JavaScript Module)
+5. Add new: https://cdn.jsdelivr.net/gh/David-Development/lovelace-carnet-card/carnet-card.js (JavaScript Module)
 6. Open your dashboard -> Edit Dashboard -> Add new Card -> Manual (all the way on the bottom)
 
 ```yaml
