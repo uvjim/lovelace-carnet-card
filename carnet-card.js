@@ -9,7 +9,12 @@ class CarnetCard extends HTMLElement {
     }
 
     const sensors = [
-      { name: "sunroof_closed", carnetId: "sunroof", on: "open", off: "" },
+      {
+        name: "sunroof_closed",
+        carnetId: "sunroof",
+        on: "open",
+        off: ""
+      },
       {
         name: "door_closed_left_front",
         carnetId: "door_ul",
@@ -68,6 +73,7 @@ class CarnetCard extends HTMLElement {
       // trunk doesn't have an "closed" image
       // windows don't have "closed" state either.
       if (
+        (state === undefined) ||
         (sensor.carnetId === "trunk" && state.state == "off") ||
         (sensor.carnetId.startsWith("window_") && state.state == "off")
       ) {
