@@ -15,6 +15,8 @@
 type: "custom:carnet-card"
 car_id: passat_gte_2020 # your car identifer in home assistant (e.g. binary_sensor.passat_gte_2020_climatisation_without_external_power)
 slice_url: https://images.portal.volkswagen-we.com/slices/passat_variant_gte_pa/passat_variant_gte_pa # either you can extract this url from the logs of the homeassistant-volkswagencarnet plugin or use the dev tools and debug the portal.volkswagen-we.com website.
+scale: 0.5 # optional (if you want the card to be smaller)
+height: 270px # optional (if you want the card to be smaller)
 ```
 
 ## Development
