@@ -1,9 +1,19 @@
 class CarnetCard extends HTMLElement {
   set hass(hass) {
     if (!this.content) {
+      const scale = this.config.scale;
+      const height = this.config.height;
+
       const card = document.createElement("ha-card");
       this.content = document.createElement("div");
       this.content.style.width = "100%";
+      if (!!height) {
+        this.content.style.height = `${height}`;
+      }
+      if (!!scale) {
+        this.content.style.transform = `scale(${scale})`;
+      }
+      this.content.style.transformOrigin = "top center";
       card.appendChild(this.content);
       this.appendChild(card);
     }
